@@ -9,8 +9,11 @@
     <title>Ivy Mae Photography</title>
 </head>
 <body>
+
+    <!-- Header content -->
     <header>
-        
+
+        <!-- Navigation content -->
         <nav> 
             <!-- Logo elements -->
             <div class="logo-container">
@@ -33,32 +36,36 @@
                 <span></span>
                 <span></span>
             </div>
-            
-
-            <!-- Mobile navigation menu -->
+        
+            <!-- Mobile navigation menu which opens and closes with onclick JS functions-->
             <ul class ="mobile-navigation-menu">
                 <li class="close" onclick="closeMobileMenu()"><p>X</p></li>
-                <li><a href="#home">home</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#gallery">gallery</a></li>
-                <li><a href="#testimonial">testamonials</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="#home" onclick="closeMobileMenu()">home</a></li>
+                <li><a href="#about" onclick="closeMobileMenu()">about</a></li>
+                <li><a href="#gallery" onclick="closeMobileMenu()">gallery</a></li>
+                <li><a href="#testimonial" onclick="closeMobileMenu()">testamonials</a></li>
+                <li><a href="#contact" onclick="closeMobileMenu()">contact</a></li>
             </ul>
-
         </nav>
     </header>
-    <section id="home">
-        <a href="#about"><i class="fas fa-angle-down"></i></a>
-    </section>
 
 
+    <!-- Home section (CSS background image used which takes up entire screen) -->
+    <section id="home"></section>
 
-    
+    <!-- About ivy mae section -->
     <section id="about">
 
-        <h3 class="section-title">About Ivy Mae </h3>
-        <div class="about-content">
+        <!-- About tiltle -->
+        <h3 class="section-title">About</h3>
+
+        <!-- About content container which is a flex container to hold all about content-->
+        <article class="about-content">
+
+            <!-- about image container to hold image (CSS background image used) -->
             <div class="about-image"></div>
+
+            <!-- about text container to hold all about text -->
             <div class="about-text">
                 <p>
                     Hi i'm Ivy Chapel, I am 25 years old and live on the northern beaches of Sydney with my fiancé. 
@@ -75,22 +82,18 @@
                 </p>
                 <p>Ivy Chapel</p>
             </div>
-        </div>
+        </article>
     </section>
 
-
-
-
-
+    <!-- Image gallery section -->
     <section id="gallery">
-        <!-- <div class="gallery-paralax-image">Gallery</div> -->
-
-        <!-- <h3 class="section-title">Ivy Mae Gallery</h3> -->
-        <h3 class="section-title">Ivy Mae Gallery</h3>
-        <!-- <h3 class="portraiture tab">Photo Gallery</h3> -->
-        
+       
+        <!-- Title for image gallery -->
+        <h3 class="section-title">Gallery</h3>
+       
+        <!-- Primary image gallery -->
         <article class="gallery-editorial">
-            <!-- grid items -->
+            <!-- grid items which hold all images-->
             <div class="editorial1 grid-item"></div>
             <div class="editorial2 grid-item"></div>
             <div class="editorial3 grid-item"></div>
@@ -104,9 +107,9 @@
             <div class="editorial11 grid-item"></div>
         </article>
 
-        
+        <!-- Secondary image gallery of portraiture images -->
         <article class="gallery-portraiture">
-            <!-- grid items -->
+            <!-- grid items which hold all images-->
             <div class="portraiture1 grid-item"></div>
             <div class="portraiture2 grid-item"></div>
             <div class="portraiture3 grid-item"></div>
@@ -120,18 +123,15 @@
             <div class="portraiture11 grid-item"></div>
         </article>
 
-
+        <!-- Expand gallery tab to increase image display size-->
         <div class="show-more tab">
             <img src="images/plus.png" alt="Plus Symbol">
         </div>
+
+        <!-- Reduce gallery tab to decreace image gallery size -->
         <div class="show-less tab"><a href="#gallery">
             <img src="images/minus.png" alt="Minus Symbol">
         </a></div>
-
-
-
-
-
     </section>
 
 
@@ -150,7 +150,7 @@
 
         <!-- Testimonial comment one -->
         <article class="testimonial-comments comment-one">
-            <h3 class="testimonial-title"">Crystal Dawson</h3>
+            <h3 class="testimonial-title">Crystal Dawson</h3>
             <p>
                 Hi, I'm Crystal Dawson, I hired Ivy Mae Photography for a photo shoot for my Instagram page last month. 
                 I found the service to be great, the price was fantastic, and the results were incredible, Thank you Ivy Mae Photography!
@@ -181,40 +181,64 @@
         </article>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Contact section -->
     <section id="contact">
         <div class="section-title">Contact Ivy Mae</div>
+
+        <!-- Contact form title -->
+        <h4 class="contact-title">Have any questions? We'd love to hear from you</h4>
+
+        <!-- Contact content section which is a flex container. -->
+        <div class="contact-content">
+
+            <!-- Contact form which is a grid container -->
+            <div class="contact-form">
+
+                <!-- Input fileds which are all grid items -->
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Phone">
+                <input type="text" placeholder="message">
+                <input type="submit" value="Submit">
+            </div>
+
+            <!-- Contact information - post office box, phone number, email, availiability social media icons -->
+            <div class="contact-info">
+
+                <!-- Contact form title -->
+                <h4 class="contact-title">Contact Information</h4>
+                <p><span>Location:</span><br>P.O.Box 2203<br>Randwick NSW, 2031<br> Sydney, Australia </p>
+                <p><span>Call Us:</span><br>1300 033 033</p>
+                <p><span>Avaliable:</span><br>Weekdays 08:00am to 05:00pm</p>
+
+                <h4 class="contact-title">Follow Us</h4>
+                <div class="socials">
+                   <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook-Icon"></a> 
+                   <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram-Icon"></a> 
+                   <a href="https://www.pinterest.com/"><img src="images/pinterest.png" alt="Pinterest-Icon"></a> 
+                </div>
+            </div>
+        </div>
     </section>
 
-
+    <!-- Back to top element which can be clicked on to take user to top of page.-->
     <a class="back-to-top" href="#home"><i class="fas fa-angle-up"></i></a>
+
+    <!-- Footer content section -->
     <footer>
-          <!-- Logo elements -->
-          <div class="logo-container">
+
+        <!-- Logo elements -->
+        <div class="logo-container">
             <h2>IVY MAE</h2>
             <h3>Photography</h3>
         </div>
+
+        <!-- Copyright text -->
         <p>&copy 2023 Ivy Mae by Mark McLachlan</p>
     </footer>
 
-    
-    
-    
-
-
-
- 
+    <!-- Link to JavaScript file -->
     <script src="main.js"></script>
 </body>
 </html>

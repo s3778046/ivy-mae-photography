@@ -178,7 +178,7 @@ nav img {
     opacity: 0.7;
 }
 
-
+/* Main section title styling */
 .section-title {
     text-transform: uppercase;
     font-size: 2rem;
@@ -231,7 +231,7 @@ nav img {
     margin: auto;
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     padding-top: 100px;
     gap: 100px;
 }
@@ -588,6 +588,89 @@ nav img {
     padding-top: 120px;
 }
 
+.contact-content {
+    min-height: 70vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    position: relative;
+}
+
+.contact-form {
+    position: relative;
+    width: 40%;
+    display: grid;
+    grid-template-rows: 60px 60px 60px 60px 60px 60px;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    padding: 40px;
+    background-image: url('./images/img2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 2px 5px black;
+}
+
+.contact-title {
+    font-family: noto-serif;
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+.contact-form input {
+    padding-left: 10px;
+    opacity: .9;
+}
+
+.contact-form input[type=submit] {
+    color: rgb(39, 39, 39);
+    border: none;
+    box-shadow: 2px 2px 2px white;
+    font-family: logo-heading;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.contact-form input[type=submit]:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.contact-form input:nth-of-type(5) {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 3;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+}
+
+.contact-info p {
+    padding: 15px 0;
+    font-family: noto-serif;
+}
+
+.contact-info p span {
+    font-weight: bold;
+}
+
+.socials {
+    margin-top: 10px;
+}
+
+.socials img {
+    height: 50px;
+    width: 50px;
+}
+
 
 
 
@@ -618,7 +701,6 @@ footer p {
     font-family: logo-text;
     color: white;
     font-size: .9rem;
-    text-align: left;
 }
 
 /* Back to top element styling */
@@ -702,6 +784,19 @@ footer p {
         width: 95%;
     }
 
+    /* Contact media query properties*/
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    .contact-title {
+        font-size: 1.1rem;
+    }
+
 }
 
 /* Media query for mobile resposive design */
@@ -735,6 +830,18 @@ footer p {
 
     .about-text {
         width: 95%;
+    }
+
+    .contact-form {
+        width: 96%;
+    }
+
+    .contact-title {
+        font-size: .8rem;
+    }
+
+    .contact-form {
+        padding: 20px;
     }
 
 
