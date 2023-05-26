@@ -110,23 +110,25 @@ nav img {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: rgb(229, 229, 229);
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     z-index: 2;
     padding: 20px;
+    width: 100%;
 }
 
 .mobile-navigation-menu li {
     list-style: none;
     padding: 20px 20px;
-    border-bottom: solid 1px grey;
+    border-bottom: solid 1px rgb(234, 234, 234);
 }
 
 .mobile-navigation-menu li a {
+    font-family: noto-serif;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
 
 .mobile-navigation-menu li:hover {
@@ -137,6 +139,7 @@ nav img {
 .close {
     text-align: right;
     font-size: 2rem;
+    font-family: 'Gill Sans MT';
 }
 
 .close:hover {
@@ -156,8 +159,8 @@ nav img {
     display: block;
     height: 5px;
     width: 30px;
-    background-color: white;
-    box-shadow: 1px 1px 1px rgb(0, 0, 0); 
+    background-color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 1px rgb(255, 255, 255); 
 }
 
 .hamburger-menu span:nth-of-type(2) {
@@ -218,7 +221,7 @@ Styled using display flex with flex direction column for small screens  */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 20px;
     gap: 100px;
 }
 
@@ -736,6 +739,19 @@ footer p {
 }
 
 /* Media query for mobile resposive design */
+@media screen and (max-width: 1300px) {  
+
+    /* About media query properties */
+    .about-text {
+        width: 85%;
+    }
+
+    .about-content {
+        gap: 30px;
+    }
+}
+
+/* Media query for mobile resposive design */
 @media screen and (max-width: 1000px) {
 
     /* Navigation media query properties */
@@ -761,7 +777,6 @@ footer p {
     .about-content {
         flex-direction: column;
         gap: 30px;
-        padding-top: 15vh;
     }
 
     .about-image {
@@ -844,6 +859,15 @@ footer p {
 
     .contact-form {
         padding: 20px;
+    }
+
+    .contact-form {
+        grid-template-rows: 55px 55px 55px 55px 55px 55px;
+    }
+
+    /* Gallery Section media queries */
+    .show-more img, .show-less img {
+        height: 60px;
     }
 }
 
