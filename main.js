@@ -1,3 +1,4 @@
+// Declare and initialise variables for gallery functions.
 const showMore = document.querySelector('.show-more');
 const showLess = document.querySelector('.show-less');
 const editorialGallery = document.querySelector('.gallery-editorial');
@@ -11,7 +12,6 @@ showMore.addEventListener("click", function() {
     portraitureGallery.style.display = 'grid';
     showMore.style.display = 'none';
     showLess.style.display = 'block';
-
 });
 
 // Event listener on portraiture tab.
@@ -34,15 +34,7 @@ function closeMobileMenu() {
     document.querySelector('.mobile-navigation-menu').style.display = 'none';
 }
 
-
-
-
-
-
-
-
-
-
+// Declare and initialise variables for Testimonial functions.
 const testIconOne = document.querySelector('.test-icon-one');
 const testIconTwo = document.querySelector('.test-icon-two');
 const testIconThree = document.querySelector('.test-icon-three');
@@ -68,12 +60,6 @@ testIconOne.addEventListener("click", function() {
     commentThree.style.display = 'none';
 });
 
-
-
-
-
-
-
 // Event listener on test icon two.
 testIconTwo.addEventListener("click", function() {
 
@@ -92,15 +78,6 @@ testIconTwo.addEventListener("click", function() {
     commentThree.style.display = 'none';
 });
 
-
-
-
-
-
-
-
-
-
 // Event listener on test icon three.
 testIconThree.addEventListener("click", function() {
 
@@ -118,4 +95,3 @@ testIconThree.addEventListener("click", function() {
     commentTwo.style.display = 'none';
     commentThree.style.display = 'block';
 });
-

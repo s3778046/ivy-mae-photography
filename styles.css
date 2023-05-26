@@ -1,13 +1,10 @@
+/* Playfair display font used for fancy body text */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
 
+/* The closest font I could find to Stix General. */
 @font-face {
     font-family: logo-heading;
     src: url(./fonts/VREMF__.TTF);
-}
-
-@font-face {
-    font-family: signature;
-    src: url(./fonts/Qhueeny\ Signature.otf);
 }
 
 /* Gill sans font */
@@ -16,16 +13,16 @@
     src: url(./fonts//Gill\ Sans\ Light\ Regular.otf);
 }
 
-/* Proxima nova font */
-@font-face {
-    font-family: prixima-nova;
-    src: url(./fonts/Fontspring-DEMO-proximanova-regular.otf);
-}
-
-/* Proxima nova font */
+/* Noto serif font used for standard body text */
 @font-face {
     font-family: noto-serif;
     src: url(./fonts/NotoSerif-Regular.ttf);
+}
+
+/* signature font used for signature */
+@font-face {
+    font-family: signature;
+    src: url(./fonts/Qhueeny\ Signature.otf);
 }
 
 /* Website variables */
@@ -41,7 +38,7 @@
     padding: 0px;
 }
 
-/* Header section */
+/* Header section styling Fixed position */
 header {
     position: fixed;
     padding: 15px 0 10px 0;
@@ -49,15 +46,14 @@ header {
     z-index: 5;
 }
 
+/* Nav bar styling for logo and navigation links */
 nav {
     display: flex;
     padding: 10px 100px;
     justify-content: space-between;
 }
 
-/* ========================= */
 /*   Ivy Mae logo styling    */
-/* ========================= */
 .logo-container h2 {
     font-family: logo-heading;
     font-size: 2rem;
@@ -80,9 +76,7 @@ nav img {
     height: 100px;
 }
 
-/* ========================= */
 /* Desktop navigation styling */
-/* ========================= */
 .desktop-navigation-menu {
     display: flex;
     justify-content: center;
@@ -110,10 +104,7 @@ nav img {
     opacity: 0.7;
 }
 
-
-/* ========================= */
-/* Mobile navigation styling */
-/* ========================= */
+/* Mobile navigation styling only to be displayed on small screens */
 .mobile-navigation-menu {
     display: none;
     position: absolute;
@@ -124,7 +115,6 @@ nav img {
     z-index: 2;
     padding: 20px;
 }
-
 
 .mobile-navigation-menu li {
     list-style: none;
@@ -161,6 +151,7 @@ nav img {
     height: 30px;
 }
 
+/* Hamburger menu styling used to open mobile navigation bar */
 .hamburger-menu span {
     display: block;
     height: 5px;
@@ -188,13 +179,10 @@ nav img {
     margin-bottom: 10px;
 }
 
-/* ========================= */
-/*   Home section styling    */
-/* ========================= */
-
+/*   Home section styling full screen image landing page  */
 #home {
     height: 100vh;
-    background-image: url('./images/img7.jpg');
+    background-image: url('./images/fashion-black-dress-wide.jpg'); /* (Tom Eskenazi, 2023) */
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: top;
@@ -214,10 +202,8 @@ nav img {
     color: grey;
 }
 
-/* ========================= */
-/*   About section styling    */
-/* ========================= */
-
+/*   About section styling.
+Styled using display flex with flex direction column for small screens  */
 #about {
     min-height: 100vh;
     text-align: center;
@@ -239,7 +225,9 @@ nav img {
 .about-image {
     height: 450px;
     width: 50%;
-    background-image: url('./images/img2.jpg');
+    background-image: url('./images/ivy-chapel.jpg');
+    /* Ноями Noyami. 2023. Pexels. Accessed May 21, 2023.
+    https://www.pexels.com/photo/brunette-woman-sitting-on-sofa-14701294/*/
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -267,16 +255,14 @@ nav img {
     color: black;
 }
 
-.about-text p:nth-of-type(3) {
+.about-text h6 {
     font-family: signature;
     margin: 25px 0;
     font-size: 2rem;
     line-height: 20px;
 }
 
-/* ************************************************************************* */
-/* ************************************************************************* */
-
+/* Gallery section styling. Styled using CSS grid */
 #gallery {
     min-height: 100vh;
     text-align: center;
@@ -324,7 +310,6 @@ nav img {
     padding: 0;
 }
 
-
 .gallery-editorial {
     display: grid;
 }
@@ -333,6 +318,7 @@ nav img {
     display: none;
 }
 
+/* Gallery Grid containers */
 .gallery-portraiture, .gallery-editorial {
     width: 81vw;
     margin: auto;
@@ -342,6 +328,7 @@ nav img {
     margin-top: 5px;
 }
 
+/* Gallery Grid Items */
 .grid-item { 
     display: flex;
     justify-content: center;
@@ -354,148 +341,187 @@ nav img {
     box-shadow: 1px 1px 3px black;
 }
 
-
-
-/* Background images applied to all grid items */
+/* Background images applied to all EDITORIAL grid items */
 .editorial1 {
     grid-column: 1 / span 1;
     grid-row: 1 / span 2; 
-    background-image: url('./images/e1.jpg');
+    background-image: url('./images/editorial1.jpg');
+    /* Trend Hunter. 2023. Pinterest. Accessed May 22, 2023.
+    https://www.pinterest.com.au/pin/127930445647882795/ */
 }
 
 .editorial2 {
     grid-column: 2 / span 2;
     grid-row: 1 / span 1;
-    background-image: url('./images/e8.jpg');
+    background-image: url('./images/editorial8.jpg');
+    /* Troy T Coburn. 2023. Troy T Coburn. Accessed May 22, 2023.
+    http://www.troytcoburn.com/ */
 }
 
 .editorial3 {
     grid-column: 4 / span 1;
     grid-row: 1 / span 1;
-    background-image: url('./images/e3.jpg');
+    background-image: url('./images/editorial3.jpg');
+    /* Mike Melia. 2023. Mike Mellia. Accessed May 22, 2023.
+    https://www.mikemellia.com/fashion-editorial-2-nyc-photographer-look-book.html/ */
 }
 
 .editorial4 {
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
-    background-image: url('./images/e4.jpg');
+    background-image: url('./images/editorial4.jpg');
+    /* Bazaar Magazine. 2023. Fixthephoto. Accessed May 22, 2023.
+    https://fixthephoto.com/editorial-photography.html/ */
 }
 
  .editorial5 {
     grid-column: 3 / span 2;
     grid-row: 2 / span 1;
-    background-image: url('./images/e5.jpg');
+    background-image: url('./images/editorial5.jpg');
+    /* Fixthephoto. 2023. Fixthephoto. Accessed May 22, 2023.
+    https://fixthephoto.com/editorial-photography.html */
 }
 
 .editorial6 {
     grid-column: 1 / span 2;
     grid-row: 3 / span 1;
-    background-image: url('./images/e2.jpg');
+    background-image: url('./images/editorial2.jpg');
+    /* Tamara Jansen. 2023. Sheeba Magazine. Accessed May 22, 2023.
+    https://www.sheebamagazine.com/articles/photography/what-is-editorial-fashion-photography/ */
 }
 
 .editorial7 {
     grid-column: 3 / span 1;
     grid-row: 3 / span 2;
-    background-image: url('./images/e6.jpg');
+    background-image: url('./images/editorial6.jpg');
+    /* Behance. 2023. Behance. Accessed May 22, 2023.
+    https://www.behance.net/gallery/17129525/STYLENOIR-Magazine */
 }
 
 .editorial8 {
     grid-column: 4 / span 1;
     grid-row: 3 / span 1;
-    background-image: url('./images/e7.jpg');
+    background-image: url('./images/editorial7.jpg');
+    /* Khuong Nguyen Creative Sweatshop. 2023. Ucreative. Accessed May 22, 2023.
+    https://www.ucreative.com/inspiration/fashion-photography-glamorous-magazine-editorials-with-graphic-design/ */
 }
 
 .editorial9 {
     grid-column: 4 / span 1;
     grid-row: 4 / span 1;
-    background-image: url('./images/e9.jpg');
+    background-image: url('./images/editorial9.jpg');
+    /* Rey Del Fierro. 2023. Solis Magazine. Accessed May 22, 2023.
+    https://solismagazine.com/fashion-editorial-shattered/ */
 }
 
 .editorial10 {
     grid-column: 1 / span 1;
     grid-row: 4 / span 1;
-    background-image: url('./images/e10.jpg');
+    background-image: url('./images/editorial10.jpg');
+    /* Matoli Keely. 2023. Matolikeelyphotography. Accessed May 22, 2023.
+    https://matolikeelyphotography.com/fashion-editorial-the-wall/ */
 }  
 
 .editorial11 {
     grid-column: 2 / span 1;
     grid-row: 4 / span 1;
-    background-image: url('./images/e11.jpg');
+    background-image: url('./images/editorial11.jpg');
+    /* Elias Wessel. 2023. Webneel. Accessed May 22, 2023.
+    https://webneel.com/webneel/blog/fashion-photography-elias-wessel-vixen-magazine/  */
 }  
 
-/* Background images applied to all grid items */
+/* Background images applied to all PORTRAITURE grid items */
 .portraiture1 {
     grid-column: 1 / span 1;
     grid-row: 1 / span 2; 
-    background-image: url('./images/p6.jpg');
+    background-image: url('./images/portraiture6.jpg');
+    /* FH Studio. 2023. Behance. Accessed May 23, 2023.
+    https://www.behance.net/gallery/6262549/Illusion-Surreal-Portrait/ */
 }
 
 .portraiture2 {
     grid-column: 2 / span 2;
     grid-row: 1 / span 1;
-    background-image: url('./images/p2.jpg');
+    background-image: url('./images/portraiture2.jpg');
+    /* James Paterson. 2023. techradar. Accessed May 23, 2023.
+    https://www.techradar.com/how-to/portrait-photography-ideas/ */
 }
 
 .portraiture3 {
     grid-column: 4 / span 1;
     grid-row: 1 / span 1;
-    background-image: url('./images/p8.jpg');
+    background-image: url('./images/portraiture8.jpg');
+    /* Thickleeyonce. 2023. pinterest. Accessed May 23, 2023.
+    https://www.pinterest.com.au/pin/355221489351663149/ */
 }
 
 .portraiture4 {
     position: relative;
     grid-column: 2 / span 1;
     grid-row: 2 / span 1;
-    background-image: url('./images/p4.jpg');
+    background-image: url('./images/portraiture4.jpg');
+    /* Jonas Jensen. 2023. Creativeboom. Accessed May 23, 2023.
+    https://www.creativeboom.com/inspiration/masters-of-portrait-leading-photographers-pick-their-favourite-portrait-shots-of-2016/ */
 }
 
  .portraiture5 {
     grid-column: 3 / span 2;
     grid-row: 2 / span 1;
-    background-image: url('./images/p5.jpg');
+    background-image: url('./images/portraiture5.jpg');
+    /* Zoltan Huszti. 2023. Bestphotos2share. Accessed May 23, 2023.
+    https://bestphotos2share.blogspot.com/2012/01/portraiture-photography-by-famous.html/ */
 }
 
 .portraiture6 {
     grid-column: 1 / span 2;
     grid-row: 3 / span 1;
-    background-image: url('./images/p1.jpg');
+    background-image: url('./images/portraiture1.jpg');
+    /* Pototalk. 2023. Pototalk. Accessed May 23, 2023.
+    http://pototalk.blogspot.com/2013/06/portrait-photography.html/ */
 }
 
 .portraiture7 {
     grid-column: 3 / span 1;
     grid-row: 3 / span 2;
-    background-image: url('./images/p7.jpg');
+    background-image: url('./images/portraiture7.jpg');
+    /* Fubiz. 2023. Fubiz. Accessed May 23, 2023.
+    https://www.fubiz.net/2016/02/18/experimental-abstract-portraits/ */
 }
 
 .portraiture8 {
     grid-column: 4 / span 1;
     grid-row: 3 / span 1;
-    background-image: url('./images/p10.jpg');
+    background-image: url('./images/portraiture10.jpg');
+    /* rgbstock. 2023. rgbstock. Accessed May 23, 2023.
+    https://www.rgbstock.nl/photo/dMC9Tt/Homeless+Portraiture+02/ */
 }
 
 .portraiture9 {
     grid-column: 4 / span 1;
     grid-row: 4 / span 1;
-    background-image: url('./images/p11.jpg');
+    background-image: url('./images/portraiture11.jpg');
+    /* Ricky Maynard. 2023. Art Gallery NSW. Accessed May 22, 2023.
+    https://www.artgallery.nsw.gov.au/artboards/portraiture/the-artist-and-the-sitter/ */
 }
 
 .portraiture10 {
     grid-column: 1 / span 1;
     grid-row: 4 / span 1;
-    background-image: url('./images/p3.jpg');
+    background-image: url('./images/portraiture3.jpg');
+    /* Iceland Photo Tours. 2023. Iceland Photo Tours. Accessed May 23, 2023.
+    https://iceland-photo-tours.com/articles/photography-techniques/10-tips-for-stunning-portrait-photography/ */
 }  
 
 .portraiture11 {
     grid-column: 2 / span 1;
     grid-row: 4 / span 1;
-    background-image: url('./images/p9.jpg');
+    background-image: url('./images/portraiture9.jpg');
+    /* Tyska. 2023. Photo By Tyska Blogspot. Accessed May 23, 2023.
+    https://photo-by-tyska.blogspot.com/2013/07/outdoor-portraiture-photography.html */
 }  
 
-
-
-/* ************************************************************************* */
-/* ************************************************************************* */
-
+/* Testimonial section styling.
+Styled using display flex with flex direction column for small screens */
 #testimonial {
     min-height: 100vh;
     text-align: center;
@@ -529,11 +555,6 @@ nav img {
     box-shadow: 2px 2px 5px black;
 }
 
-.icon:hover {
-    scale: 1.1;
-    cursor: pointer;
-}
-
 .testimonial-comments {
     width: 60%;
     margin: auto;
@@ -559,8 +580,8 @@ nav img {
 }
 
 .active-comment {
-    scale: 1.2;
-    border: solid 2px var(--dark-grey)
+    animation: pulse 2s ease infinite;
+    border: solid 4px var(--dark-grey)
 }
 
 .icon:hover {
@@ -568,20 +589,8 @@ nav img {
     opacity: .8;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Contact styling */
+/* Contact section styling displaying contact form and contact information.
+Styled using display flex with flex direction column for small screens */
 #contact {
     min-height: 100vh;
     text-align: center;
@@ -606,7 +615,9 @@ nav img {
     grid-template-columns: 50% 50%;
     gap: 10px;
     padding: 40px;
-    background-image: url('./images/img2.jpg');
+    background-image: url('./images/ivy-chapel.jpg');
+    /* Ноями Noyami. 2023. Pexels. Accessed May 21, 2023.
+    https://www.pexels.com/photo/brunette-woman-sitting-on-sofa-14701294/*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -671,13 +682,7 @@ nav img {
     width: 50px;
 }
 
-
-
-
-
-
-
-/* Footer styling */
+/* Footer section styling */
 footer {
     background-color: black;
     padding: 10px;
@@ -794,15 +799,14 @@ footer p {
     }
 
     .contact-title {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
-
 }
 
 /* Media query for mobile resposive design */
 @media screen and (max-width: 600px) {
    
-
+    /* Header section media queries */
     .logo-container h2 {
         font-size: 1.5rem;
     }
@@ -819,6 +823,7 @@ footer p {
         padding: 10px 30px;
     }
 
+    /* About section media queries */
     .about-content {
         padding-top: 20px;
     }
@@ -832,31 +837,25 @@ footer p {
         width: 95%;
     }
 
+    /* Contact section media queries */
     .contact-form {
         width: 96%;
-    }
-
-    .contact-title {
-        font-size: .8rem;
     }
 
     .contact-form {
         padding: 20px;
     }
-
-
 }
 
-
-
-
-
-
-
-
-
-
-/* Keyframe animations */
-@keyframes smooth-scroll {
-
+/*  Timeline */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
 }
+

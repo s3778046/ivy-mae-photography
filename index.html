@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b4eff55874.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="styles.css">
     <title>Ivy Mae Photography</title>
 </head>
 <body>
 
-    <!-- Header content -->
+    <!-- **********************************************************************
+        Header content displays Ivy Mae logo and navigation bar with links 
+        to home, about, gallery, testimonial and contact pages
+    ************************************************************************-->
     <header>
 
         <!-- Navigation content -->
         <nav> 
+            
             <!-- Logo elements -->
             <div class="logo-container">
                 <h2>IVY MAE</h2>
@@ -30,7 +35,8 @@
                 <li><a href="#contact">contact</a></li>
             </ul>
 
-            <!-- Hamburger menu icon -->
+            <!-- Hamburger menu icon which is only displayed on small screens. 
+            When clicked mobile navigation bar opens-->
             <div class="hamburger-menu" onclick="openMobileMenu()">
                 <span></span>
                 <span></span>
@@ -50,10 +56,14 @@
     </header>
 
 
-    <!-- Home section (CSS background image used which takes up entire screen) -->
+    <!-- ************************************************************************
+        Home section (CSS background image used which takes up entire screen). 
+    **************************************************************************-->
     <section id="home"></section>
 
-    <!-- About ivy mae section -->
+    <!-- **********************************************************************************************
+        About Ivy Mae section which is a split screen with a profile image and three paragraph elements. 
+    *************************************************************************************************-->
     <section id="about">
 
         <!-- About tiltle -->
@@ -80,20 +90,24 @@
                     on trend eye of my photography appeal to potential clients. 
  
                 </p>
-                <p>Ivy Chapel</p>
+                <h6>Ivy Chapel</h6>
             </div>
         </article>
     </section>
 
-    <!-- Image gallery section -->
+    <!-- ****************************************************************************************************
+        Image gallery section which by default displays 11 images with a plus icon image that once clicked 
+        will expand the image gallery to 22 images and display a minus image icon to decrease gallery size.
+    *******************************************************************************************************-->
     <section id="gallery">
        
         <!-- Title for image gallery -->
         <h3 class="section-title">Gallery</h3>
        
         <!-- Primary image gallery -->
-        <article class="gallery-editorial">
-            <!-- grid items which hold all images-->
+        <div class="gallery-editorial">
+
+            <!-- grid items which hold all images, CSS backgroung image property used to display images-->
             <div class="editorial1 grid-item"></div>
             <div class="editorial2 grid-item"></div>
             <div class="editorial3 grid-item"></div>
@@ -105,11 +119,12 @@
             <div class="editorial9 grid-item"></div>
             <div class="editorial10 grid-item"></div>
             <div class="editorial11 grid-item"></div>
-        </article>
+        </div>
 
         <!-- Secondary image gallery of portraiture images -->
-        <article class="gallery-portraiture">
-            <!-- grid items which hold all images-->
+        <div class="gallery-portraiture">
+            
+            <!-- grid items which hold all images, CSS backgroung image property used to display images-->
             <div class="portraiture1 grid-item"></div>
             <div class="portraiture2 grid-item"></div>
             <div class="portraiture3 grid-item"></div>
@@ -121,34 +136,49 @@
             <div class="portraiture9 grid-item"></div>
             <div class="portraiture10 grid-item"></div>
             <div class="portraiture11 grid-item"></div>
-        </article>
+        </div>
 
         <!-- Expand gallery tab to increase image display size-->
         <div class="show-more tab">
-            <img src="images/plus.png" alt="Plus Symbol">
+            <img src="images/plus.png" alt="Plus Symbol"> 
+            <!-- istockphoto. 2023. istockphoto. Accessed May 23, 2023.
+            https://www.istockphoto.com/vector/plus-and-minus-icon-vector-design-on-white-background-gm1210782807-350898087/ -->
         </div>
 
         <!-- Reduce gallery tab to decreace image gallery size -->
         <div class="show-less tab"><a href="#gallery">
             <img src="images/minus.png" alt="Minus Symbol">
+            <!-- istockphoto. 2023. istockphoto. Accessed May 23, 2023.
+            https://www.istockphoto.com/vector/plus-and-minus-icon-vector-design-on-white-background-gm1210782807-350898087/ -->
         </a></div>
     </section>
 
-
-    <!-- Testimonial section -->
+    <!-- ***************************************** Testimonial Section ************************************************* 
+    Testimonial section to display three testimonials. Displays three images of customers and a text section underneath.
+    When a customer image is clicked the text will change to the written testimonial of the clicked on customer. Thye image 
+    becomes active whichn adds a border and scales it larger.
+    **************************************************************************************************************** -->
     <section id="testimonial">
 
         <!-- Title -->
         <h1 class="section-title">Testimonials</h1>
 
-        <!-- Testimonial image icons -->
-        <article class="testimonial-icons">
-            <img class="test-icon-one icon" src="images/test1.jpg" alt="">
-            <img class="test-icon-two icon active-comment" src="images/test2.jpg" alt="">
-            <img class="test-icon-three icon" src="images/test3.jpg" alt=""> 
-        </article>
+        <!-- Testimonial image icons, when clicked the comment for chosen icon will be displayed -->
+        <div class="testimonial-icons">
+            <img class="test-icon-one icon" src="images/crystal-dawson.jpg" alt="Young Woman"> 
+            <!-- Andrea Piacquadio. 2023. pexels. Accessed May 23, 2023.
+            https://www.pexels.com/photo/woman-in-white-fur-coat-leaning-on-gray-wall-3774980/ -->
 
-        <!-- Testimonial comment one -->
+            <img class="test-icon-two icon active-comment" src="images/chanel-hepburn.jpg" alt="Young Woman"> 
+            <!-- Hannah Nelson. 2023. pexels. Accessed May 23, 2023.
+            https://www.pexels.com/photo/close-up-photography-of-a-woman-near-wall-1065084/ -->
+            
+            <img class="test-icon-three icon" src="images/johnathon-dawes.jpg" alt="Youn Man">  
+            <!-- Nappy. 2023. pexels. Accessed May 23, 2023.
+            https://www.pexels.com/photo/laughing-man-wearing-gray-v-neck-t-shirt-936119/ -->
+        </div>
+
+        <!-- Testimonial comment one, displayed when corresponding icon is clicked on -->
         <article class="testimonial-comments comment-one">
             <h3 class="testimonial-title">Crystal Dawson</h3>
             <p>
@@ -159,7 +189,7 @@
             <p>Crystal Dawson</p>
         </article>
 
-        <!-- Testimonial comment two -->
+        <!-- Testimonial comment two, displayed when corresponding icon is clicked on -->
         <article class="testimonial-comments comment-two">
             <h3 class="testimonial-title">Chanel Hepburn</h3>
             <p>
@@ -170,7 +200,7 @@
             <p>Chanel Hepburn</p>
         </article>
 
-        <!-- Testimonial comment three -->
+        <!-- Testimonial comment three, displayed when corresponding icon is clicked on -->
         <article class="testimonial-comments comment-three">
             <h3 class="testimonial-title">Johnathon Dawes</h3>
             <p>
@@ -181,12 +211,15 @@
         </article>
     </section>
 
-    <!-- Contact section -->
+    <!-- **********************************************************************************************
+        Contact section is a split screen flex layout with a form to the left and contact information 
+        to the right include social media links. Changes to flex-direction column for small screens
+    ************************************************************************************************-->
     <section id="contact">
         <div class="section-title">Contact Ivy Mae</div>
 
         <!-- Contact form title -->
-        <h4 class="contact-title">Have any questions? We'd love to hear from you</h4>
+        <h4 class="contact-title">Have any questions?</h4>
 
         <!-- Contact content section which is a flex container. -->
         <div class="contact-content">
@@ -204,21 +237,34 @@
             </div>
 
             <!-- Contact information - post office box, phone number, email, availiability social media icons -->
-            <div class="contact-info">
+            <article class="contact-info">
 
-                <!-- Contact form title -->
+                <!-- Contact information title -->
                 <h4 class="contact-title">Contact Information</h4>
+
+                <!-- Contact form information -->
                 <p><span>Location:</span><br>P.O.Box 2203<br>Randwick NSW, 2031<br> Sydney, Australia </p>
                 <p><span>Call Us:</span><br>1300 033 033</p>
                 <p><span>Avaliable:</span><br>Weekdays 08:00am to 05:00pm</p>
 
+                <!-- Contact Follow Us title -->
                 <h4 class="contact-title">Follow Us</h4>
+
+                <!-- Social media icons -->
                 <div class="socials">
-                   <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook-Icon"></a> 
-                   <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram-Icon"></a> 
-                   <a href="https://www.pinterest.com/"><img src="images/pinterest.png" alt="Pinterest-Icon"></a> 
+                   <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook-Icon"></a>  
+                    <!-- Vecteezy. 2023. Vecteezy. Accessed May 23, 2023.
+                    https://www.vecteezy.com/vector-art/229578-social-media-icon-set/ -->
+
+                   <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram-Icon"></a>
+                    <!-- Vecteezy. 2023. Vecteezy. Accessed May 23, 2023.
+                    https://www.vecteezy.com/vector-art/229578-social-media-icon-set/ -->
+
+                   <a href="https://www.pinterest.com/"><img src="images/pinterest.png" alt="Pinterest-Icon"></a>
+                    <!-- Vecteezy. 2023. Vecteezy. Accessed May 23, 2023.
+                    https://www.vecteezy.com/vector-art/229578-social-media-icon-set/ -->
                 </div>
-            </div>
+            </article>
         </div>
     </section>
 
@@ -235,7 +281,7 @@
         </div>
 
         <!-- Copyright text -->
-        <p>&copy 2023 Ivy Mae by Mark McLachlan</p>
+        <p>&copy; 2023 Ivy Mae by Mark McLachlan</p>
     </footer>
 
     <!-- Link to JavaScript file -->
