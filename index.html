@@ -21,11 +21,13 @@
         <nav> 
             
             <!-- Logo elements -->
-            <div class="logo-container">
-                <h2>IVY MAE</h2>
-                <h3>Photography</h3>
-            </div>
-            
+            <a class="home-link" href="#home">
+                <div class="logo-container">
+                    <h2>IVY MAE</h2>
+                    <h3>Photography</h3>
+                </div>
+            </a>
+
             <!-- Desktop navigation menu -->
             <ul class="desktop-navigation-menu">
                 <li><a href="#home">home</a></li>
@@ -46,11 +48,13 @@
             <!-- Mobile navigation menu which opens and closes with onclick JS functions-->
             <ul class ="mobile-navigation-menu">
 
-                <!-- Logo elements -->
-                <div class="logo-container">
-                    <h2>IVY MAE</h2>
-                    <h3>Photography</h3>
-                </div>
+                <!-- Logo elements, which is also a link to the home page-->
+                <a href="#home"class="home-link">
+                    <div class="logo-container" onclick="closeMobileMenu()">
+                        <h2>IVY MAE</h2>
+                        <h3>Photography</h3>
+                    </div>
+                </a>
 
                 <!-- Menu options -->
                 <li class="close" onclick="closeMobileMenu()"><p>X</p></li>

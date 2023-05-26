@@ -72,6 +72,15 @@ nav {
     font-weight: bold;
 }
 
+.home-link {
+    text-decoration: none;
+}
+
+.logo-container:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
 nav img {
     height: 100px;
 }
@@ -871,7 +880,7 @@ footer p {
     }
 }
 
-/*  Timeline */
+/*  Testimonial keyframe animation */
 @keyframes pulse {
     0% {
         transform: scale(1);
