@@ -185,7 +185,8 @@ nav img {
 
 /* Main section title styling */
 .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
     font-weight: bold;
     font-family: logo-heading;
     color: rgb(0, 0, 0);
@@ -375,8 +376,8 @@ Styled using display flex with flex direction column for small screens  */
     grid-column: 4 / span 1;
     grid-row: 1 / span 1;
     background-image: url('./images/editorial3.jpg');
-    /* Mike Melia. 2023. Mike Mellia. Accessed May 22, 2023.
-    https://www.mikemellia.com/fashion-editorial-2-nyc-photographer-look-book.html/ */
+    /* Harpersbazaar. 2023. Harpersbazaar. Accessed May 22, 2023.
+    https://www.harpersbazaar.com/beauty/hair/g43888604/ulta-gorgeous-hair-event-2023/ */
 }
 
 .editorial4 {
@@ -431,16 +432,16 @@ Styled using display flex with flex direction column for small screens  */
     grid-column: 1 / span 1;
     grid-row: 4 / span 1;
     background-image: url('./images/editorial10.jpg');
-    /* Matoli Keely. 2023. Matolikeelyphotography. Accessed May 22, 2023.
-    https://matolikeelyphotography.com/fashion-editorial-the-wall/ */
+        /* Joseph RG. 2023. josephrgphotography. Accessed May 23, 2023.
+    https://josephrgphotography.com.au/fashion-photography/ */
 }  
 
 .editorial11 {
     grid-column: 2 / span 1;
     grid-row: 4 / span 1;
     background-image: url('./images/editorial11.jpg');
-    /* Elias Wessel. 2023. Webneel. Accessed May 22, 2023.
-    https://webneel.com/webneel/blog/fashion-photography-elias-wessel-vixen-magazine/  */
+    /* Joseph RG. 2023. josephrgphotography. Accessed May 23, 2023.
+    https://josephrgphotography.com.au/fashion-photography/ */
 }  
 
 /* Background images applied to all PORTRAITURE grid items */
@@ -749,6 +750,18 @@ footer p {
 
 /* Media query for mobile resposive design */
 @media screen and (max-width: 1300px) {  
+
+    .desktop-navigation-menu li a  {
+        font-size: .9rem;
+    }
+
+    .logo-container h2 {
+        font-size: 2rem;
+    }
+    
+    .logo-container h3 {
+        font-size: 1.5;
+    }
 
     /* About media query properties */
     .about-text {
