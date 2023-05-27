@@ -1,3 +1,6 @@
+/* Code validates with no errors using CSS validation 
+service at https://jigsaw.w3.org/css-validator/  */
+
 /* Playfair display font used for fancy body text */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
 
@@ -27,7 +30,6 @@
 
 /* Website variables */
 :root {
-    --dark-grey: #dcdcdc;
     --light-grey: rgb(246, 246, 246);
 }
 
@@ -56,7 +58,7 @@ nav {
 /*   Ivy Mae logo styling    */
 .logo-container h2 {
     font-family: logo-heading;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: rgb(0, 0, 0);
     text-shadow: 1px 1px 1px rgb(255, 255, 255);
     letter-spacing: 5px;
@@ -65,7 +67,7 @@ nav {
 
 .logo-container h3 {
     font-family: logo-text;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: white;
     text-shadow: 2px 2px 3px black;
     letter-spacing: 4px;
@@ -101,7 +103,7 @@ nav img {
 .desktop-navigation-menu li a {
     text-decoration: none;
     font-family: logo-text;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
     text-transform: uppercase;
     color: rgb(0, 0, 0);
@@ -183,7 +185,6 @@ nav img {
 
 /* Main section title styling */
 .section-title {
-    text-transform: uppercase;
     font-size: 2rem;
     font-weight: bold;
     font-family: logo-heading;
@@ -221,7 +222,7 @@ Styled using display flex with flex direction column for small screens  */
     text-align: center;
     background-color: var(--light-grey);
     border-top: solid 1px grey;
-    padding: 120px 0 0px 0 ;
+    padding: 140px 0 0px 0 ;
 }
 
 .about-content {
@@ -552,8 +553,7 @@ Styled using display flex with flex direction column for small screens */
 
 .testimonial-title {
     text-transform: capitalize;
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.7rem;
     font-family: logo-heading;
     color: rgb(0, 0, 0);
     text-shadow: 2px 2px 2px rgb(255, 255, 255);
@@ -593,7 +593,7 @@ Styled using display flex with flex direction column for small screens */
 
 .active-comment {
     animation: pulse 2s ease infinite;
-    border: solid 4px var(--dark-grey)
+    border: solid 4px #dcdcdc;
 }
 
 .icon:hover {
@@ -717,7 +717,7 @@ footer .logo-container h3{
 footer p {
     font-family: logo-text;
     color: white;
-    font-size: .9rem;
+    font-size: .7rem;
 }
 
 /* Back to top element styling */
